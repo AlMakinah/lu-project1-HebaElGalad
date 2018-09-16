@@ -11,9 +11,10 @@
 @import "elements/anchor.css";
 @import "elements/body.css";
 
-/* OBJECT */
+/* OBJECT */ /* EX:GRID */
 
 /* COMPONENTS */
+@import "components/footer.css";
 
 /* UTILITIES */
 @import "utilities/screen-readers.css";
