@@ -6,6 +6,7 @@
 /* GENERIC */ /* rest for styling */
 @import "generic/box-sizing.css";
 @import "generic/typography.css";
+@import "generic/clearfix.css";
 
 /* ELEMENTS */
 @import "elements/anchor.css";

@@ -14,16 +14,18 @@
     <h1>
       <a href="index.html"><img src="images/logo-rectangle.png" alt="dribbles" class="dribble__logo"><span class="visually-hidden">Dribbles</span></a>
     </h1>
-    <ul class="list list--inline nav-bar__nav">
-      <li class="nav__item"><a href="">Dribbles</a></li>
-      <li class="nav__item"><a href="">Buckets</a></li>
-      <li class="nav__item"><a href="">Users</a></li>
-      <li class="nav__item"><a href="">Lists</a></li>
-    </ul>
-    <ul class="list list--inline page-header__user-nav">
-      <li class="user-nav__item"><a href="">Signup</a></li>
-      <li class="user-nav__item"><a href="">Signin</a></li>
-    </ul>
+    <div class="nav-bars__container clearfix">
+      <ul class="list list--inline nav-bar__nav">
+        <li class="nav__item"><a href="">Dribbles</a></li>
+        <li class="nav__item"><a href="">Buckets</a></li>
+        <li class="nav__item"><a href="">Users</a></li>
+        <li class="nav__item"><a href="">Lists</a></li>
+      </ul>
+      <ul class="list list--inline page-header__user-nav">
+        <li class="user-nav__item"><a href="">Signup</a></li>
+        <li class="user-nav__item"><a href="">Signin</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header>
@@ -33,7 +35,7 @@
   <main>
     <ol class="list dribble-list">
       <li class="dribble-item">
-        <div class="dribble__card">
+        <div class="dribble__card clearfix">
           <img src="images/card-img/brown-bear.png" alt="" class="dribble__img">
           <ul class="list list--inline dribble__actions">
             <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
