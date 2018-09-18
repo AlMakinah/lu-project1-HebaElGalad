@@ -15,6 +15,7 @@
 /* OBJECT */ /* EX:GRID */
 
 /* COMPONENTS */
+@import "components/header.css";
 @import "components/card.css";
 @import "components/footer.css";
 
