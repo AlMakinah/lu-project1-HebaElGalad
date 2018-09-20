@@ -1,3 +1,15 @@
+.dribble-item {
+  margin-bottom: var(--gutter);
+}
+
+.dribble-item + .dribble-item {
+  margin-left: var(--gutter);
+}
+
+.dribble-item + .dribble-item:nth-child(4n + 1) {
+  margin-left: 0;
+}
+
 .dribble__card {
   width: 215px;
   height: 180px;
@@ -40,4 +52,8 @@ ul.dribble__actions {
 
 .dribble__user-name {
   color: var(--secondary-color);
+}
+
+.dribble__user-name:hover {
+  color: var(--text-black);
 }
