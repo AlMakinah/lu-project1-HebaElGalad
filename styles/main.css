@@ -22,6 +22,7 @@
 @import "components/footer.css";
 @import "components/navbar.css";
 @import "components/button.css";
+@import "components/signing-buttons.css";
 
 /* UTILITIES */
 @import "utilities/screen-readers.css";
