@@ -20,6 +20,7 @@
 @import "components/header.css";
 @import "components/card.css";
 @import "components/footer.css";
+@import "components/navbar.css";
 
 /* UTILITIES */
 @import "utilities/screen-readers.css";
