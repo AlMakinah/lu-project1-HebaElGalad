@@ -11,58 +11,342 @@
 
 <body>
   <nav class="page-header__nav-bar">
-    <h1>
-      <a href="index.html"><img src="images/logo-rectangle.png" alt="dribbles" class="dribble__logo"><span class="visually-hidden">Dribbles</span></a>
-    </h1>
-    <div class="nav-bars__container clearfix">
-      <ul class="list list--inline nav-bar__nav">
-        <li class="nav__item"><a href="">Dribbles</a></li>
-        <li class="nav__item"><a href="">Buckets</a></li>
-        <li class="nav__item"><a href="">Users</a></li>
-        <li class="nav__item"><a href="">Lists</a></li>
-      </ul>
-      <ul class="list list--inline page-header__user-nav">
-        <li class="user-nav__item"><a href="">Signup</a></li>
-        <li class="user-nav__item"><a href="">Signin</a></li>
-      </ul>
+    <div class="container">
+      <div class="row row--3 no--gutters">
+        <div class="col col--2">
+          <h1>
+            <a href="index.html"><img src="images/logo-rectangle.png" alt="dribbles" class="dribble__logo"><span class="visually-hidden">Dribbles</span></a>
+          </h1>
+          <ul class="list list--inline nav-bar__nav">
+            <li class="nav__item"><a href="">Dribbles</a></li>
+            <li class="nav__item"><a href="">Buckets</a></li>
+            <li class="nav__item"><a href="">Users</a></li>
+            <li class="nav__item"><a href="">Lists</a></li>
+          </ul>
+        </div>
+        <div class="col clearfix">
+          <!-- <div class="nav-bars__container clearfix"> -->
+          <ul class="list list--inline page-header__user-nav">
+            <li class="user-nav__item"><a href="">Signup</a></li>
+            <li class="user-nav__item"><a href="">Signin</a></li>
+          </ul>
+          <!-- </div> -->
+        </div>
+      </div>
     </div>
   </nav>
 
-  <header>
-    <h2 class="page__title h1">Dribbles</h2>
-  </header>
+  <div class="container">
+    <div class="row no--gutters">
+      <div class="col">
+        <header>
+          <h2 class="page__title h1">Dribbles</h2>
+        </header>
+      </div>
+    </div>
+  </div>
 
   <main>
-    <ol class="list dribble-list">
-      <li class="dribble-item">
-        <div class="dribble__card clearfix">
-          <img src="images/card-img/brown-bear.png" alt="" class="dribble__img">
-          <ul class="list list--inline dribble__actions">
-            <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
-              </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
-            <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
-              </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
-            <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
-                </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
-          </ul>
+    <div class="container">
+      <div class="row no--gutters">
+        <div class="col">
+          <ol class="list list--inline dribble-list">
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/brown-bear.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/two-deers.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/robot.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/brown-bear.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/credit-card-emoji.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/brown-bear.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/app-design.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/robot.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/two-deers.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/robot.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/credit-card-emoji.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/brown-bear.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/app-design.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/two-deers.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/robot.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+            <li class="dribble-item">
+              <div class="dribble__card clearfix">
+                <img src="images/card-img/credit-card-emoji.png" alt="" class="dribble__img">
+                <ul class="list list--inline dribble__actions">
+                  <li class="dribble__view h5"><img src="images/action-icons/Exclude.png" alt=""><span class="visually-hidden">Views
+                    </span><span class="dribble__action-count">4234</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__comment h5"><img src="images/action-icons/Union.png" alt=""><span class="visually-hidden">Comment
+                    </span><span class="dribble__action-count">23</span><span class="visually-hidden"> times</span></li>
+                  <li class="dribble__like h5"><a href="#"><img src="images/action-icons/Heart.png" alt=""><span class="visually-hidden">Like
+                      </span><span class="dribble__action-count">3</span><span class="visually-hidden"> times</span></a></li>
+                </ul>
+              </div>
+              <a href="#" class="dribble__user">
+                <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span
+                  class="dribble__user-name h4">Somename</span>
+              </a>
+            </li>
+          </ol>
         </div>
-        <a href="#" class="dribble__user">
-          <img src="images/card-img/credit-card-emoji.png" alt="user avatar" class="dribble__user-avatar"><span class="dribble__user-name h4">Somename</span>
-        </a>
-      </li>
-    </ol>
-
-    <section>
-      <ul class="list">
-        <li class=""><a href="#">Sign up to continue</a></li>
-        <li class=""><a href="#">or sign in</a></li>
-      </ul>
-    </section>
+      </div>
+      <div class="row row--3">
+        <div class="col offset--4">
+          <section>
+            <ul class="list">
+              <li class=""><a href="#" class="btn btn--lg btn--primary">Sign up to continue</a></li>
+              <li class=""><a href="#" class="btn btn--lg btn--secondary">or sign in</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
   </main>
 
-
   <footer class="page-footer">
-    <p class="h5">copyrights 2018</p>
+    <div class="container">
+      <div class="row row--3">
+        <div class="col offset--4">
+          <p class="footer__text h5">copyrights 2018</p>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 

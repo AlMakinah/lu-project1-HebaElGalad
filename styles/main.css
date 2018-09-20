@@ -1,5 +1,6 @@
 /* SETTINGS */
 @import "settings/colors.css";
+@import "settings/grid.css";
 
 /* FUNCTIONS, MIXINS */
 
@@ -13,6 +14,7 @@
 @import "elements/body.css";
 
 /* OBJECT */ /* EX:GRID */
+@import "objects/grid.css";
 
 /* COMPONENTS */
 @import "components/header.css";
