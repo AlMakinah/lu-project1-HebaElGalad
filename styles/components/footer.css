@@ -1,9 +1,13 @@
 .page-footer {
-  text-align: center;
+  margin-top: var(--gutter);
   border-top: 1px solid var(--border-lightgrey);
 }
 
-.page-footer > p {
+.page-footer .footer__text {
+  text-align: center;
+}
+
+.page-footer p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
