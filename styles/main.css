@@ -21,6 +21,7 @@
 @import "components/card.css";
 @import "components/footer.css";
 @import "components/navbar.css";
+@import "components/button.css";
 
 /* UTILITIES */
 @import "utilities/screen-readers.css";
