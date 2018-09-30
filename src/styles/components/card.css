@@ -1,0 +1,126 @@
+.dribble {
+  &__card {
+    margin-bottom: 16px;
+    padding: 8px 8px 4px;
+    border-radius: 2px;
+    background-color: var(--white);
+    box-shadow: 0 1px 1px var(--box-shadow);
+    display: block;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 104%;
+      height: 104%;
+      top: -2%;
+      left: -2%;
+      /* background: hsl(0, 0%, 100%); */
+      opacity: 0;
+      transition: 300ms ease-in-out;
+      transition-property: opacity;
+      will-change: opacity;
+    }
+    .card-info {
+      opacity: 0;
+      transition: 300ms ease-in-out 100ms;
+      transition-property: transform opacity;
+      transform: translateY(15%);
+      will-change: transform;
+    }
+    &:hover {
+      cursor: pointer;
+      .card-info {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      &::before {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__view {
+    padding-left: 22px;
+    background-image: url('../images/action-icons/Exclude.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  &__comment {
+    padding-left: 20px;
+    background-image: url('../images/action-icons/Union.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  &__like {
+    padding-left: 20px;
+    background-image: url('../images/action-icons/Heart.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  &__action-count {
+    display: inline-block;
+    color: var(--text-grey);
+    vertical-align: top;
+  }
+
+  &__user {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 4px;
+  }
+
+  &__user-avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  &__user-name {
+    color: var(--secondary-color);
+    vertical-align: top;
+    &:hover {
+      color: var(--text-black);
+    }
+  }
+}
+
+ul.dribble__actions {
+  float: right;
+}
+
+/* CARD INFO STYLE */
+.card-info {
+  background: hsl(0, 0%, 100%, 0.9);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  &__title {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  &__text {
+    height: 80px;
+    margin: 0;
+    line-height: 1.2;
+    color: var(--text-grey);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__footer {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+.card__publish-time {
+  color: var(--text-grey);
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

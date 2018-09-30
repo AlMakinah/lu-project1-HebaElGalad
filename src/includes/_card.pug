@@ -1,0 +1,25 @@
+.col
+  li.dribble__container
+    .dribble__card
+      .card-info
+        include _card-info
+      img.dribble__img(src="images/card-img/brown-bear.png" alt="")
+      .clearfix
+        ul.list.list--inline.dribble__actions
+          li.dribble__view.heading__level-5
+            span.visually-hidden Views
+            span.dribble__action-count 4234
+            span.visually-hidden times
+          li.dribble__comment.heading__level-5
+            span.visually-hidden Comment
+            span.dribble__action-count 23
+            span.visually-hidden times
+          li.dribble__like.heading__level-5
+            a(href="#")
+              span.visually-hidden Like
+              span.dribble__action-count 3
+              span.visually-hidden times
+    a.dribble__user(href="#")
+      img.dribble__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+      span.dribble__user-name.heading__level-4.heading--bold somename
+    

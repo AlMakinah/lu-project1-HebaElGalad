@@ -1,0 +1,59 @@
+.card-details
+  header.card-details__header.clearfix
+    .card-details__header__user-info
+      img.card-details__header__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+      .card-details__header__title-container
+        h1.card-details__header__title.heading__level-3 Pay Junction - Paper Receipts 
+        p.card-details__header__subtitle.text--small by 
+          a.button.button--secondary.heading__level-4.heading--bold(href="#") Eddie Lobanivsjky 
+          | on 
+          time.card-details__header__time(datetime= "2018-08-20") August 20, 2018
+    .card-details__header__actions
+      button.button__save.button.button--outline(type="button") Save
+      button.button__like.button.button--outline(type="button") Like
+  .card-details__img
+    img(src="images/card-img/two-deers.png" alt="")
+    //- .clearfix
+    //-   .responsive-container
+  section.card-details__body.clearfix
+    .card-details__body__description
+      p.card-details__body__description-text.text--small Hey guys, here’s a sneak peak of my  work in progress I was happy everyone got to see my last work and commented so much. I'll be sure to keep you updated
+    .card-details__body__actions
+      .clearfix
+        a.card-details__body__copy-link.button.button--outline(href="#") 
+          span  Copy Link
+      ul.body__actions__list.list
+        li.body__actions__view.heading__level-5
+          span.body__actions__count  6124 Views
+        li.body__actions__like.heading__level-5
+          a(href="#")
+            span.body__actions__count  1232 likes
+        li.body__actions__save.heading__level-5
+          a(href="#")
+            span.body__actions__count  23 saves
+    .card-details__responses
+      h2.responses__title Responses
+      .responses__body
+        .responses__user-response
+          a.responses__user-profile(href="#")
+            //- img.responses__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+            span.responses__user-name username
+          p.user-response__text I like what you did with this place, I like what you did with this place, I’m not sure what to do about that part. what do you think?
+          footer.user-response__footer
+            p.card-details__subtitle
+              time(datetime= "2018-08-20") August 20, 2018
+            button(type="button").response__like
+              img(src="images/action-icons/Heart.png" alt="")
+              span  12
+        .responses__user-response
+          a.responses__user-profile(href="#")
+            //- img.responses__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+            span.responses__user-name username
+          p.user-response__text I like what you did with this place, I like what you did with this place, I’m not sure what to do about that part.
+          footer.user-response__footer
+            p.card-details__subtitle
+              time(datetime= "2018-08-20") August 20, 2018
+            button(type="button").response__like
+              img(src="images/action-icons/Heart.png" alt="")
+              span  12
+

@@ -1,0 +1,22 @@
+- var navItems = ['Dribbles', 'Buckets', 'Users', 'Lists']
+header.header
+  .container
+    nav.header__nav-bar
+      .row.row--3
+        .col.col--2
+          h1
+            a(href="index.html")
+              img.dribble__logo(src="images/logo-rectangle.png" alt="dribbles")
+              span.visually-hidden Dribbles
+          ul.list.list--inline.nav-bar__nav
+            - for (var item = 0; item < navItems.length; item++) {
+                li.nav__item
+                  a(href="")= navItems[item]
+            - }
+        .col.clearfix
+          ul.list.list--inline.header__user-nav
+            li.user-nav__item
+              a(href="") Signup
+            li.user-nav__item
+              a(href="") Signin
+            

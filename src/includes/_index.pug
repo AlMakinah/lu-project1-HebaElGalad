@@ -1,0 +1,20 @@
+main
+  .container
+    .row.no--gutters
+      .col
+        header.page-header
+          h2.page-header__title.heading--level-1 Dribbles
+    section
+      ul.list.list--inline
+        .row.row--4.no--gutters
+          - for (var i=0; i < 16; i++) {
+              include _card
+          - }
+    .row.row--2
+      .col.offset--3
+        section
+          ul.list.signing__buttons
+            li.sign__up
+              a.button.button--block.button--large.button--primary(href="#") Sign up to continue
+            li.sign__in
+              a.button.button--block.button--large.button--secondary(href="#") or sign in

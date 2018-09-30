@@ -1,0 +1,10 @@
+.page-footer {
+  border-top: 1px solid var(--border-lightgrey);
+  .footer__text {
+    text-align: center;
+  }
+  p {
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+  }
+}

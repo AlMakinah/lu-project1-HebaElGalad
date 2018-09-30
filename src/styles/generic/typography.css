@@ -1,0 +1,44 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* TEXT STYLES */
+.heading--bold {
+  /* for level-1, level-3 and level-4 */
+  font-weight: bold;
+}
+
+.heading__level-1,
+.heading__level-2,
+.text--lead {
+  line-height: 1.5;
+}
+
+.heading__level-4,
+.text--small {
+  line-height: 1.54;
+}
+
+.heading__level-1 {
+  font-size: 24px;
+}
+
+.heading__level-2 {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.heading__level-3,
+.text--lead {
+  font-size: 16px;
+}
+
+.heading__level-4,
+.text--small {
+  font-size: 13px;
+}
+
+.heading__level-5 {
+  font-size: 11px;
+  line-height: 1.8;
+}
