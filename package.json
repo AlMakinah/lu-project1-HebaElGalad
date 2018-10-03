@@ -61,10 +61,11 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.1",
     "css-element-queries": "^1.0.2",
     "flatpickr": "^4.4.4",
     "jquery": "^3.3.1",
-    "lity": "^2.3.0",
+    "lity": "^2.3.1",
     "phantomjs-prebuilt": "^2.1.16",
     "scrollreveal": "^3.3.6",
     "slick-carousel": "^1.8.1",
