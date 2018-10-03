@@ -7,16 +7,6 @@
   padding-right: var(--gutter);
 }
 
-/* .no--gutters {
-  margin-left: 0;
-  margin-right: 0;
-} */
-
-/* .row.no--gutters > .col {
-  padding-right: 0;
-  padding-left: 0;
-} */
-
 .row {
   margin-right: calc(-1 * var(--gutter));
   margin-left: calc(-1 * var(--gutter));
@@ -32,7 +22,6 @@
     float: left;
     padding-left: var(--gutter);
     padding-right: var(--gutter);
-    margin-bottom: calc(2 * var(--gutter));
   }
 }
 
