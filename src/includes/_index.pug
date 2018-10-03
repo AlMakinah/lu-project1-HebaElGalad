@@ -1,12 +1,12 @@
 main
   .container
-    .row.no--gutters
+    .row
       .col
         header.page-header
           h2.page-header__title.heading--level-1 Dribbles
     section
       ul.list.list--inline
-        .row.row--4.no--gutters
+        .row.row--4
           - for (var i=0; i < 16; i++) {
               include _card
           - }
@@ -18,3 +18,4 @@ main
               a.button.button--block.button--large.button--primary(href="#") Sign up to continue
             li.sign__in
               a.button.button--block.button--large.button--secondary(href="#") or sign in
+              
