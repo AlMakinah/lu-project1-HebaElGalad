@@ -16,6 +16,7 @@
 
 /* OBJECT */ /* EX:GRID */
 @import 'objects/grid.css';
+@import 'objects/media.css';
 
 /* COMPONENTS */
 @import 'components/header.css';
@@ -24,6 +25,7 @@
 @import 'components/navbar.css';
 @import 'components/button.css';
 @import 'components/signing-buttons.css';
+@import 'components/card-details.css';
 
 /* UTILITIES */
 @import 'utilities/screen-readers.css';

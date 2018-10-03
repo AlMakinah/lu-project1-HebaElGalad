@@ -1,11 +1,11 @@
 .card-details
   header.card-details__header.clearfix
-    .card-details__header__user-info
-      img.card-details__header__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
-      .card-details__header__title-container
+    .card-details__header__title-container
+      img.card-details__header__user-avatar.media__img(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+      .media__content
         h1.card-details__header__title.heading__level-3 Pay Junction - Paper Receipts 
         p.card-details__header__subtitle.text--small by 
-          a.button.button--secondary.heading__level-4.heading--bold(href="#") Eddie Lobanivsjky 
+          a.card-details__header__user-name.button.button--secondary.heading__level-4.heading--bold(href="#") Eddie Lobanivsjky 
           | on 
           time.card-details__header__time(datetime= "2018-08-20") August 20, 2018
     .card-details__header__actions
@@ -26,34 +26,33 @@
         li.body__actions__view.heading__level-5
           span.body__actions__count  6124 Views
         li.body__actions__like.heading__level-5
-          a(href="#")
+          a.hover(href="#")
             span.body__actions__count  1232 likes
         li.body__actions__save.heading__level-5
-          a(href="#")
+          a.hover(href="#")
             span.body__actions__count  23 saves
     .card-details__responses
-      h2.responses__title Responses
-      .responses__body
+      header.responses__header
+        h2.responses__title.heading__level-3 Responses
+      section.responses__body
         .responses__user-response
           a.responses__user-profile(href="#")
-            //- img.responses__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
-            span.responses__user-name username
-          p.user-response__text I like what you did with this place, I like what you did with this place, I’m not sure what to do about that part. what do you think?
-          footer.user-response__footer
-            p.card-details__subtitle
-              time(datetime= "2018-08-20") August 20, 2018
-            button(type="button").response__like
-              img(src="images/action-icons/Heart.png" alt="")
-              span  12
+            img.responses__user-avatar.media__img(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+            span.responses__user-name.heading__level-4.heading--bold username
+          .media__content
+            p.responses__user-response-text.text--small I like what you did with this place, I like what you did with this place, I’m not sure what to do about that part. Whay do you think?
+            footer.responses__user-response-footer.clearfix
+              p.responses__user-response-time.heading__level-5
+                time(datetime= "2018-08-20") August 20, 2018
+              button.responses__user-response-like.button.button--secondary(type="button") 12
         .responses__user-response
           a.responses__user-profile(href="#")
-            //- img.responses__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
-            span.responses__user-name username
-          p.user-response__text I like what you did with this place, I like what you did with this place, I’m not sure what to do about that part.
-          footer.user-response__footer
-            p.card-details__subtitle
-              time(datetime= "2018-08-20") August 20, 2018
-            button(type="button").response__like
-              img(src="images/action-icons/Heart.png" alt="")
-              span  12
+            img.responses__user-avatar.media__img(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+            span.responses__user-name.heading__level-4.heading--bold username
+          .media__content
+            p.responses__user-response-text.text--small I like what you did with this place, I like what you did with this place, I’m not sure what to do about that part.
+            footer.responses__user-response-footer.clearfix
+              p.responses__user-response-time.heading__level-5
+                time(datetime= "2018-08-20") August 20, 2018
+              button.responses__user-response-like.button.button--secondary(type="button") 12
 
