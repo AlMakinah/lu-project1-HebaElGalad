@@ -1,0 +1,24 @@
+- var navItems = ['Dribbles', 'Buckets', 'Users', 'Lists']
+header.header
+  .container
+    nav.header__nav-bar
+      .row.row--3
+        .col.col--2
+          h1
+            a(href="index.html")
+              img.dribble__logo(src="images/logo-rectangle.png" alt="dribbles")
+              span.visually-hidden Dribbles
+          ul.list.list--inline.nav-bar__nav
+            - for (var item = 0; item < navItems.length; item++) {
+                li.nav__item
+                  a(href="#")= navItems[item]
+            - }
+        .col.clearfix
+          .logged-in.clearfix
+            a.header__user(href="#")
+              img.header__user-avatar(src="images/card-img/credit-card-emoji.png" alt="user avatar")
+            form.header__search.clearfix(action="", method="get")
+              label.visually-hidden.header__search__label(for="search") search
+              input.header__search__input(type="text" id="search" placeholder="Search...")
+              button.header__search__button(type="submit")
+                span.visually-hidden Search

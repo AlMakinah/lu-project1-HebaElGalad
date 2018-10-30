@@ -1,0 +1,58 @@
+.logged-in {
+  padding-top: 10px;
+  float: right;
+}
+
+.header {
+  &__user {
+    float: left;
+    margin-right: 16px;
+  }
+  &__user-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  &__search {
+    display: inline-block;
+    height: 20px;
+    float: left;
+    &__input {
+      float: left;
+      position: relative;
+      background-color: var(--white);
+      color: var(--text-black);
+      border-radius: 2px;
+      border: 0;
+      text-indent: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      outline: none;
+    }
+    &__button {
+      float: left;
+      height: 20px;
+      padding: 2px 8px 2px 20px;
+      position: absolute;
+      right: 310px;
+      top: 10px;
+      background-color: var(--white);
+      color: var(--text-grey);
+      border: 0;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      text-align: center;
+      line-height: 1.54;
+      cursor: pointer;
+      background-image: url('../images/action-icons/Search.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+  }
+}
+
+label.header__search__label {
+  float: left;
+  display: inline-block;
+}
