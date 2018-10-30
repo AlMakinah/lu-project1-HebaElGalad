@@ -1,4 +1,7 @@
 .dribble {
+  &__container {
+    margin-bottom: calc(2 * var(--gutter));
+  }
   &__card {
     margin-bottom: 16px;
     padding: 8px 8px 4px;
@@ -7,36 +10,15 @@
     box-shadow: 0 1px 1px var(--box-shadow);
     display: block;
     position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 104%;
-      height: 104%;
-      top: -2%;
-      left: -2%;
-      /* background: hsl(0, 0%, 100%); */
-      opacity: 0;
-      transition: 300ms ease-in-out;
-      transition-property: opacity;
-      will-change: opacity;
+
+    &:hover .card-info {
+      opacity: 1;
     }
-    .card-info {
-      opacity: 0;
-      transition: 300ms ease-in-out 100ms;
-      transition-property: transform opacity;
-      transform: translateY(15%);
-      will-change: transform;
-    }
-    &:hover {
-      cursor: pointer;
-      .card-info {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-      &::before {
-        opacity: 0.6;
-      }
-    }
+  }
+
+  &__img {
+    opacity: 1;
+    transition: .5s ease;
   }
 
   &__view {
@@ -94,33 +76,44 @@ ul.dribble__actions {
 
 /* CARD INFO STYLE */
 .card-info {
-  background: hsl(0, 0%, 100%, 0.9);
+  background: var(--white);
+  opacity: 0;
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  transition: .5s ease;
   width: 100%;
-  padding: 16px;
+  padding: 16px 16px 8px;
+  /* z-index: -1; */
   &__title {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin: 0;
   }
   &__text {
     height: 80px;
     margin: 0;
-    line-height: 1.2;
     color: var(--text-grey);
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: pre-wrap;
   }
   &__footer {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 8px;
   }
 }
 
 .card__publish-time {
   color: var(--text-grey);
   margin: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 0;
+}
+
+/* CARD DETAILS STYLE */
+#card-details {
+  display: none;
+}
+
+.dribble__card-action {
+  display: block;
+  z-index: 5;
 }
