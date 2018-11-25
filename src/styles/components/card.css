@@ -116,4 +116,9 @@ ul.dribble__actions {
 .dribble__card-action {
   display: block;
   z-index: 5;
+  position: relative;
+}
+
+.dribble__card-action:hover {
+  opacity: 0;
 }
