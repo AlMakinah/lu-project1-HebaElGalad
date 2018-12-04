@@ -1,14 +1,10 @@
-#Dribble App
-
----
+# Dribble App
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
 This project was styled using `BEM` methodology and `ITCSS` and was written with [PostCSS](https://github.com/postcss/postcss)
 
 ## Available Scripts
-
----
 
 In the project directory, you can run:
 
