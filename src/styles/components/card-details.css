@@ -1,0 +1,211 @@
+/* CARD DETAILS STYLE */
+#card-details {
+ padding: 0;
+ margin: 0;
+}
+
+.card-details {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 10;
+  &__container {
+  position: absolute;
+  top: 20px;
+  left: 28%;
+  max-width: 672px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border: 1px solid var(--border-lightgrey);
+  border-radius: 8px;
+  }
+  &__header {
+    background-color: var(--background-offwhite);
+    padding: 24px;
+    border-radius: 8px;
+    &__title-container {
+      float: left;
+    }
+    &__user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    &__title {
+      display: inline-block;
+      margin: 0;
+    }
+    &__subtitle {
+      margin: 0;
+    }
+    &__user-name {
+      padding-left: 0;
+      padding-right: 6px;
+      &:hover {
+        color: var(--secondary-dark);
+      }
+    }
+    &__time {
+      color: var(--light-grey);
+    }
+    &__actions {
+      float: right;
+      padding-top: 6px;
+    }
+  }
+  &__img {
+    padding: 24px;
+    /* max-height: 292px; */
+  }
+  &__body {
+    padding: 24px;
+    background-color: var(--background-offwhite);
+    border-radius: 8px;
+    &__description {
+      float: left;
+      width: 65%;
+      border-bottom: 1px solid var(--light-grey);
+    }
+    &__description-text {
+      display: inline-block;
+      margin: 0;
+      padding-bottom: 16px;
+    }
+    &__actions {
+      float: right;
+      width: 30%;
+    }
+    &__copy-link {
+      float: right;
+      padding-left: 32px;
+      margin-bottom: 16px;
+      background-image: url('./images/action-icons/Link.svg');
+      background-position: 10% center;
+      background-repeat: no-repeat;
+      &:hover {
+        background-image: url('./images/action-icons/Link-black.svg');
+      }
+      & span {
+        vertical-align: middle;
+      }
+    }
+  }
+  &__responses {
+    float: left;
+    width: 65%;
+  }
+}
+
+/* HEADER BUTTONS STYLE */
+.button {
+  &__save {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 6px;
+  }
+  &__like {
+    padding-left: 32px;
+    background-image: url('./images/action-icons/Heart.svg');
+    background-position: 15% center;
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url('./images/action-icons/Heart-black.svg');
+    }
+  }
+}
+
+/* BODY ACTIONS LIST STYLE */
+ul.body__actions__list {
+  padding-left: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.body__actions {
+  &__list li + li {
+    margin-top: 4px;
+  }
+  &__view,
+  &__like,
+  &__save {
+    padding-left: 24px;
+    background-position: 0% center;
+    background-repeat: no-repeat;
+  }
+  &__view {
+    background-image: url('./images/action-icons/Exclude-lightGrey.svg');
+  }
+  &__like {
+    background-image: url('./images/action-icons/Heart-lightGrey.svg');
+  }
+  &__save {
+    background-image: url('./images/action-icons/Subtract-lightGrey.svg');
+  }
+  &__count {
+    color: var(--light-grey);
+    vertical-align: middle;
+  }
+  &__like span:hover,
+  &__save span:hover {
+    color: var(--text-black);
+  }
+}
+
+/* USERS RESPONSES STYLE */
+.responses {
+  &__title {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  &__user-response {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--light-grey);
+  }
+  &__user-profile {
+    color: var(--text-black);
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+  &__user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  &__user-response-text {
+    margin: 0;
+  }
+  &__user-response-time {
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 0;
+    color: var(--text-black);
+  }
+  &__user-response-like {
+    float: right;
+    color: var(--light-grey);
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.8;
+    padding-left: 24px;
+    background-image: url('./images/action-icons/Heart-lightGrey.svg');
+    background-position: 12% center;
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url('./images/action-icons/Heart-black.svg');
+    }
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}

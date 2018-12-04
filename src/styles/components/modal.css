@@ -1,0 +1,46 @@
+.card-details {
+  &__modal {
+    background-color: rgba(51, 51, 51, 0.8);
+  }
+  &.modal-container {
+    position: relative;
+  }
+}
+
+.close {
+  &__img {
+    display: inline-block;
+    position: absolute;
+    /* width: 40px; */
+    /* height: 40px; */
+    top: 40px;
+    right: 68px;
+  }
+}
+
+.modal {
+  &__nav {
+    position: relative;
+    &__prev {
+      position: absolute;
+      top: 212px;
+      left: 108px;
+    }
+    &__next {
+      position: absolute;
+      top: 212px;
+      right: 108px;
+    }
+    &__prev > a,
+    &__next > a {
+      display: inline-block;
+    }
+  }
+}
+
+.prev,
+.next {
+  &__img {
+    width: 50%;
+  }
+}

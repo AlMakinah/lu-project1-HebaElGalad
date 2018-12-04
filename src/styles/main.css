@@ -1,0 +1,33 @@
+/* SETTINGS */
+@import 'settings/colors.css';
+@import 'settings/grid.css';
+
+/* FUNCTIONS, MIXINS */
+
+/* GENERIC */ /* rest for styling */
+@import 'generic/box-sizing.css';
+@import 'generic/typography.css';
+@import 'generic/clearfix.css';
+
+/* ELEMENTS */
+@import 'elements/anchor.css';
+@import 'elements/body.css';
+@import 'elements/img.css';
+
+/* OBJECT */ /* EX:GRID */
+@import 'objects/grid.css';
+@import 'objects/media.css';
+
+/* COMPONENTS */
+@import 'components/header.css';
+@import 'components/header-logged-in.css';
+@import 'components/card.css';
+@import 'components/footer.css';
+@import 'components/navbar.css';
+@import 'components/button.css';
+@import 'components/signing-buttons.css';
+@import 'components/card-details.css';
+
+/* UTILITIES */
+@import 'utilities/screen-readers.css';
+@import 'utilities/list.css';
