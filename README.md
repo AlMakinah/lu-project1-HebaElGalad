@@ -6,12 +6,12 @@ A static website to mimic **_dribble_** website.
 
 The project has **two** branches:
 
-- **master**
+- **master**<br>
   In which the project was written using [Pug](https://github.com/pugjs/pug).<br>
   And the styling was written using [PostCSS](https://github.com/postcss/postcss) and `BEM` methodology and `ITCSS`.<br>
 
-* **dribble-react-app**
-  In which the project wascreated with [Create React App](https://github.com/facebook/create-react-app).<br>
+- **dribble-react-app**<br>
+  In which the project was created with [Create React App](https://github.com/facebook/create-react-app).<br>
   And also styled using [PostCSS](https://github.com/postcss/postcss) and `BEM` methodology and `ITCSS`.<br>
 
 ## Available Scripts
