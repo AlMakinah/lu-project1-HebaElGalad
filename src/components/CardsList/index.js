@@ -7,8 +7,8 @@ class CardsList extends Component {
     return (
       <ul className="list list--inline">
         <div className="row row--4">
-          {Array.from(Array(cards)).map((x) => (
-            <Card />
+          {Array.from(Array(cards)).map((x, index) => (
+            <Card key={index} />
           ))}
         </div>
       </ul>
